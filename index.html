@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NUS Money</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+			integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- Header-->
+		<header class="header">
+			<!-- Top Header -->
+			<div class="header__top">
+				<div class="logo">
+					<img src="images/nus-money-logo.svg" alt="NUS Money logo" />
+					<span class="text text--small">NUS Money</span>
+				</div>
+				<nav>
+					<ul class="list list--inline">
+						<li class="list__item text text--small text--regular" >
+            <a href="transactions.html">My Portfolio</a></li>
+						<li class="list__item text text--small text--regular">About</li>
+						<li class="list__item text text--small text--regular">Contact</li>
+					</ul>
+					<button class="btn btn--link text text--small text--medium">
+						Login
+					</button>
+					<span class="vertical-line"></span>
+					<button class="btn btn--accent text--small text--medium">
+						Register
+					</button>
+				</nav>
+			</div>
+			<!-- Header Body -->
+			<div class="header__body">
+				<div class="grid grid--1x2 grid--centered grid-gap--small">
+					<div class="value-proposition">
+						<h1 class="value-proposition__title">
+							Fastest & most trusted crypto tracking platform
+						</h1>
+						<p class="value-proposition__text text text--small text--regular">
+							We're your one-stop shop for all crypto data. 
+              Chosen by 100 million+ users.
+						</p>
+						<button class="value-proposition__button btn btn--flex btn--accent">
+							<span class="text--standart text--medium">Try for FREE</span>
+							<div class="chiron-icon-container">
+								<img src="images/chevron-right.svg" alt="Right Icon" />
+							</div>
+						</button>
+					</div>
+					<img
+						src="images/btc-illustration.svg"
+						alt="Bitcoin illustration"
+						class="btc-illustration"
+						data-rellax-horizontal-speed="-2"
+						data-rellax-vertical-scroll-axis="x" />
+				</div>
+			</div>
+			<img
+				class="background-item-1"
+				src="images/background-item-1.svg"
+				alt="" />
+			<img
+				class="background-item-2"
+				src="images/background-item-2.svg"
+				alt="" />
+		</header>
+
+		<!-- icon-card -->
+		<section class="icon-card">
+			<!-- Media Objects -->
+			<div class="media-container">
+				<div class="media">
+					<div class="icon-container">
+						<svg class="media-icon">
+							<use xlink:href="images/media-icons-sprite.svg#person"></use>
+						</svg>
+					</div>
+					<div>
+						<h2>100M+</h2>
+						<p class="text text--small text--regular text--muted">
+							Trusted Users
+						</p>
+					</div>
+				</div>
+				<div class="media">
+					<div class="icon-container">
+						<svg class="media-icon">
+							<use xlink:href="images/media-icons-sprite.svg#bar-chart"></use>
+						</svg>
+					</div>
+					<div>
+						<h2>110+</h2>
+						<p class="text text--small text--regular text--muted">
+							Advanced Analytical Tools
+						</p>
+					</div>
+				</div>
+				<div class="media">
+					<div class="icon-container">
+						<svg class="media-icon">
+							<use xlink:href="images/media-icons-sprite.svg#earth"></use>
+						</svg>
+					</div>
+					<div>
+						<h2>195</h2>
+						<p class="text text--small text--regular text--muted">
+							Languages Supported
+						</p>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Track Section -->
+		<section class="track-section">
+			<h2 class="text--primary">
+				Track all of your crypto bags in one place.
+			</h2>
+			<div class="currencies">
+				<div class="card card--secondary">
+					<svg class="currency-icon">
+						<use xlink:href="images/currencies-sprite.svg#btc"></use>
+					</svg>
+					<div class="card__header">
+						<h3>Bitcoin</h3>
+						<span class="text text--standart text--medium">BTC</span>
+					</div>
+					<p class="text text-small text--regular card__text">
+						Digital currency in which a record of transactions is maintained.
+					</p>
+					<button class="btn btn--flex btn--accent">
+						<span class="text--standart text--medium">Start Tracking</span>
+						<div class="chiron-icon-container">
+							<img src="images/chevron-right.svg" alt="Right Icon" />
+						</div>
+					</button>
+				</div>
+				<div class="card card--white">
+					<svg class="currency-icon">
+						<use xlink:href="images/currencies-sprite.svg#eth"></use>
+					</svg>
+					<div class="card__header">
+						<h3>Ethereum</h3>
+						<span class="text text--standart text--medium">ETH</span>
+					</div>
+					<p class="text text-small text--regular card__text">
+						Blockchain technology to create and run decentralized digital
+						applications.
+					</p>
+				</div>
+				<div class="card card--white">
+					<svg class="currency-icon">
+						<use xlink:href="images/currencies-sprite.svg#ltc"></use>
+					</svg>
+					<div class="card__header">
+						<h3>Litecoin</h3>
+						<span class="text text--standart text--medium">LTC</span>
+					</div>
+					<p class="text text-small text--regular card__text">
+						Cryptocurrency that enables instant payments to anyone in the world.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Reporting -->
+		<section class="report">
+			<div class="grid grid--1x2 grid--centered">
+				<div class="banner banner--left">
+					<h2 class="banner__title">
+						Real-time crypto gains reporting
+					</h2>
+					<p class="banner__text text text--small text--regular text--muted">
+						110+ crypto exchange imports advanced analytical tools to let you
+						track current and historical profit investments.
+					</p>
+					<button class="btn btn--accent">
+						<span class="text--standart text--medium">Learn More</span>
+					</button>
+				</div>
+				<img src="images/coin-table.svg" alt="Coin tables" />
+			</div>
+
+			<img
+				class="background-item-3"
+				src="images/background-item-3.svg"
+				alt="" />
+			<img
+				class="background-item-4"
+				src="images/background-item-4.svg"
+				alt="" />
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__bottom">
+				<div class="footer__top__logo">
+					<img src="images/nus-money-logo.svg" alt="NUS Money logo" />
+					<span class="text text--medium">NUS Money</span>
+				</div>
+				<div class="footer__bottom__copyright text text--small text--regular">
+					&copy;2022 NUS Money. All rights reserved.
+				</div>
+				<div class="footer__bottom__social-media">
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#facebook"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#instagram"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#youtube"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#twitter"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#linkedin"></use>
+					</svg>
+				</div>
+			</div>
+		</footer>
+		<script>
+			new Rellax('.btc-illustration', {
+				horizontal: true,
+			});
+			new Rellax('#gpu-illustration', {
+				horizontal: true,
+			});
+		</script>
+	</body>
+</html>
