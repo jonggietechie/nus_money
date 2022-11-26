@@ -4,51 +4,101 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="styles/styles.css" rel="stylesheet" />
-		<link href="styles/index.css" rel="stylesheet" />
-		<title>nus money</title>
+		<link href="css/styles.css" rel="stylesheet" />
+		<title>NUS Money</title>
 	</head>
-	<body class="container full-height-grow">
-		<header class="main-header">
-			<a href="/" class="brand-logo">
-				<img src="images/nus-money-logo.svg" />
-				<div class="brand-logo-name">nus money</div>
-			</a>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="feature.html">How it works</a></li>
-					<li><a href="dashboard.html">Dashboard</a></li>
-				</ul>
-			</nav>
+	<body>
+		<!-- Header-->
+		<header class="header">
+			<!-- Top Header -->
+			<div class="header__top">
+				<div class="logo">
+					<img src="images/nus-money-logo.svg" alt="NUS Money logo" />
+					<span class="text text--small">NUS Money</span>
+				</div>
+				<nav>
+					<ul class="list list--inline">
+						<li class="list__item text text--small text--regular">Portfolio</li>
+						<li class="list__item text text--small text--regular">
+							<a href="transactions.html">Transactions</a>
+						</li>
+						<li class="list__item text text--small text--regular">About</li>
+					</ul>
+					<button class="btn btn--link text text--small text--medium">
+						Login
+					</button>
+					<span class="vertical-line"></span>
+					<button class="btn btn--accent text--small text--medium">
+						Register
+					</button>
+				</nav>
+			</div>
+
+			<section class="transactions-section">
+				<h3>Transaction Details</h3>
+				<form id="form">
+					<div class="form-control">
+						<label for="startdate">Start Date</label>
+						<input
+							type="date"
+							id="startdate"
+							placeholder="Enter start date..." />
+					</div>
+					<div class="form-control">
+						<label for="enddate">End Date</label>
+						<input type="date" id="enddate" placeholder="Enter end date..." />
+					</div>
+					<button class="btn btn--accent text--small">Submit</button>
+				</form>
+
+				<!-- Table -->
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Amount</th>
+							<th>Category</th>
+							<th>Description</th>
+							<th>Account</th>
+						</tr>
+					</thead>
+
+					<tbody id="myTable"></tbody>
+				</table>
+			</section>
 		</header>
-		<section class="transactions-section">
-			<h3>Transaction Details</h3>
-			<form id="form">
-				<div class="form-control">
-					<label for="startdate">Start Date</label>
-					<input type="date" id="startdate" placeholder="Enter start date..." />
-				</div>
-				<div class="form-control">
-					<label for="enddate">End Date</label>
-					<input type="date" id="enddate" placeholder="Enter end date..." />
-				</div>
-				<button class="btn">Submit</button>
-			</form>
 
-			<table class="table table-striped">
-				<tr class="bg-info">
-					<th>Date</th>
-					<th>Amount</th>
-					<th>Category</th>
-					<th>Description</th>
-					<th>Account</th>
-				</tr>
-
-				<tbody id="myTable"></tbody>
-			</table>
-		</section>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__bottom">
+				<div class="footer__top__logo">
+					<img src="images/nus-money-logo.svg" alt="NUS Money logo" />
+					<span class="text text--medium">NUS Money</span>
+				</div>
+				<div class="footer__bottom__copyright text text--small text--regular">
+					&copy;2022 NUS Money. All rights reserved.
+				</div>
+				<div class="footer__bottom__social-media">
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#facebook"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#instagram"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#youtube"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#twitter"></use>
+					</svg>
+					<svg class="social-icon">
+						<use xlink:href="images/social-media-sprite.svg#linkedin"></use>
+					</svg>
+				</div>
+			</div>
+		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="/scripts/gettable.js"></script>
+		<script src="scripts/gettable.js"></script>
 	</body>
 </html>
