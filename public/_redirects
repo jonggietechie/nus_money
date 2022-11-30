@@ -1,2 +1,2 @@
-/transactions/* 200! Role=guest
-/transactions/* /unauthorized 401!
+/transactions.html/* 200! Role=guest
+/transactions.html/* /unauthorized 401!
