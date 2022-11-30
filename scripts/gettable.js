@@ -3,10 +3,10 @@ const startdate = document.getElementById('startdate');
 const enddate = document.getElementById('enddate');
 
 function getDataFromApi(event) {
-	let url = 'https://fe04156e-b0a5-468a-a569-dab0a548bb56.mock.pstmn.io';
+	let url = 'https://66d3c33e-6d00-4771-a3c0-64a11edd376d.mock.pstmn.io';
 
 	var settings = {
-		url: `${url}/transactions?startdate=${startdate}&enddate=${enddate}`,
+		url: `${url}/crytotransactions?startdate=${startdate}&enddate=${enddate}`,
 		method: 'GET',
 		timeout: 0,
 		headers: {
@@ -31,10 +31,12 @@ function buildTable(data) {
 	for (var i = 0; i < data.length; i++) {
 		var row = `<tr>
                     <td>${data[i].date}</td>
-                    <td>${data[i].amount}</td>
-                    <td>${data[i].category}</td>
-                    <td>${data[i].description}</td>
-                    <td>${data[i].account}</td>
+                    <td>${data[i].currenncypair}</td>
+                    <td>${data[i].side}</td>
+                    <td>${data[i].order}</td>
+					<td>SGD$ ${data[i].cryptoprice}</td>
+					<td>${data[i].quantity}</td>
+					<td>${data[i].status}</td>
                 </tr>`;
 		table.innerHTML += row;
 	}
